@@ -5,7 +5,11 @@
         <h1>Footer</h1>
       </div>
     </div>
-    <div id="footer-bottom"></div>
+    <div id="footer-bottom">
+      <div class="container">
+        
+      </div>
+    </div>
   </footer>
 </template>
 
