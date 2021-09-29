@@ -1,18 +1,18 @@
 <template>
     <header>
-        <img src="@/assets/images/dc-logo.png" alt="">
-        <nav>
-            <ul>
-                <li>sdfsdsdfsfd</li>
-                <li>sdfsdsdfsfd</li>
-                <li>sdfsdsdfsfd</li>
-                <li>sdfsdsdfsfd</li>
-                <li>sdfsdsdfsfd</li>
-                <li>sdfsdsdfsfd</li>
-                <li>sdfsdsdfsfd</li>
+        <div class="container">
+            <img src="@/assets/images/dc-logo.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="">ciao</a></li>
+                    <li><a href="">ciao</a></li>
+                    <li><a href="">ciao</a></li>
+                    <li><a href="">ciao</a></li>
+                    <li><a href="">ciao</a></li>
+        </div>
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
     </header>
 </template>
 
@@ -23,12 +23,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "common"
     header {
         background-color: white;
         display: flex;
-    }
-    li {
-        color: yellow;
+        justify-content: space-between;
+        img {
+        width: 5rem;
+        height: 5rem;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        ul {
+        list-style: none;
         display: flex;
+        }
+        li {
+        margin: 0 20px;
+
+        }
     }
+
+
+
+    
+
+    
 </style>

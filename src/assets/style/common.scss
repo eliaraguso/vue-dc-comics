@@ -14,3 +14,10 @@ body {
 }
 
 // Containers
+.container {
+    max-width: 120rem;
+    background-color: yellow;
+    border: 1px solid;
+    max-width: 80%;
+    margin: auto;
+}

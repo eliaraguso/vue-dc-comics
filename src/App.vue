@@ -2,8 +2,8 @@
   <div id="app">
     <Header/>
     <main>
-      <Section_content/>
-      <Section_services/>
+        <Section_content/>
+        <Section_services/>
     </main>
     <Footer/>
   </div>
