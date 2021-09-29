@@ -9,10 +9,9 @@
                     <li><a href="">ciao</a></li>
                     <li><a href="">ciao</a></li>
                     <li><a href="">ciao</a></li>
-        </div>
-
                 </ul>
             </nav>
+        </div>
     </header>
 </template>
 
@@ -23,18 +22,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "common"
+@import "@/assets/style/variables";
     header {
-        background-color: white;
-        display: flex;
-        justify-content: space-between;
+        height: 7.5rem;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         img {
         width: 5rem;
         height: 5rem;
         }
         nav {
             display: flex;
-            align-items: center;
         }
         ul {
         list-style: none;
@@ -43,6 +44,10 @@ export default {
         li {
         margin: 0 20px;
 
+        }
+        a {
+            color: $darkGrey;
+            text-decoration: none;
         }
     }
 
