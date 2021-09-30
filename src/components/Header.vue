@@ -89,9 +89,6 @@ header {
     height: 5rem;
   }
 
-  nav {
-  }
-
   ul {
     list-style: none;
     display: flex;
