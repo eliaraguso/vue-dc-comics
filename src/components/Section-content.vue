@@ -60,7 +60,9 @@
         <div class="serie-img"></div>
         <div class="serie-title">ACTION COMICS</div>
       </div>
+      
     </div>
+    <button>LOAD MORE</button>
   </section>
 </template>
 
@@ -167,16 +169,20 @@ section {
   background-color: $darkGrey;
   height: 41.875rem;
   color: white;
+  text-align: center;
+  padding-top: 30px;
 
   .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 20px;
   }
   .serie {
     width: calc((100% / 6) - 1rem);
     height: fit-content;
+    text-align: initial;
   }
   .serie-img {
     height: 11.75rem;
@@ -186,7 +192,17 @@ section {
     background-size: cover;
   }
   .serie-title {
-    padding-top: 20px;
+    padding-top: 1.25rem;
   }
+
+  button {
+    padding: 8px 50px;
+    background-color: $blue;
+    border: $blue;
+    border-radius: .1875rem;
+    color: white;
+    font-weight: bold;
+  }
+
 }
 </style>
