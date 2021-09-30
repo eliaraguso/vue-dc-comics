@@ -27,7 +27,6 @@
               <li>
                 <a href="#">News</a>
               </li>
-             
             </ul>
             <h2>SHOP</h2>
             <ul>
@@ -97,15 +96,51 @@
               </li>
             </ul>
           </div>
-
         </div>
         <div id="footer-top-right">
-          <img src="../assets/images/dc-logo-bg.png" alt="">
+          <img src="../assets/images/dc-logo-bg.png" alt="" />
         </div>
       </div>
     </div>
     <div id="footer-bottom">
-      <div class="container"></div>
+      <div class="container">
+        <div id="footer-bottom-left">
+          <button>SIGN-UP NOW!</button>
+        </div>
+        <div id="footer-bottom-right">
+          <ul>
+            <li>
+              <a id="follow-us" href="#">FOLLOW US</a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/footer-facebook.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/footer-twitter.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/footer-youtube.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/footer-pinterest.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/footer-periscope.png" alt="">
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -122,27 +157,26 @@ footer {
   height: 30rem;
 }
 
-ul {
-  list-style: none;
-  a {
-    text-decoration: none;
-    color: $lighterGrey;
-  }
-}
-
 #footer-top {
   height: 23.125rem;
   background-image: url(../assets/images/footer-bg.jpg);
   .container {
     display: flex;
     justify-content: space-between;
+    ul {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: $lighterGrey;
+      }
+    }
   }
 }
 #footer-top-left {
   display: flex;
   h2 {
     color: white;
-    padding: 10px 0;
+    padding: .625rem 0;
   }
   #footer-left1,
   #footer-left2,
@@ -150,7 +184,7 @@ ul {
     display: flex;
     flex-direction: column;
     padding-top: 2.5rem;
-    margin-right: 50px;
+    margin-right: 3.125rem;
   }
 }
 
@@ -158,15 +192,42 @@ ul {
   display: flex;
   align-items: center;
   overflow: hidden;
-   img{
-     width: 155%;
-     height: 150%;
-
-   }
+  img {
+    width: 155%;
+    height: 150%;
   }
+}
 
 #footer-bottom {
   height: 6.875rem;
   background-color: $lightGrey;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  button {
+    background-color: transparent;
+    border: .0625rem solid $blue;
+    color: white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding: .625rem .9375rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 0 .9375rem;
+    }
+  }
+  #follow-us {
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: $blue;
+  }
 }
 </style>

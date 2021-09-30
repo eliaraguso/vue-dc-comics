@@ -170,14 +170,15 @@ section {
   height: 41.875rem;
   color: white;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 3.125rem;
 
   .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
   }
   .serie {
     width: calc((100% / 6) - 1rem);
@@ -196,13 +197,14 @@ section {
   }
 
   button {
-    padding: 8px 50px;
+    padding: .5rem 3.125rem;
     background-color: $blue;
     border: $blue;
     border-radius: .1875rem;
     color: white;
     font-weight: bold;
   }
+  
 
 }
 </style>
