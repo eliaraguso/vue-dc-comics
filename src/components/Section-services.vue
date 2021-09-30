@@ -21,27 +21,27 @@ export default {
         services:[
           {
             text: "DIGITAL COMICS",
-            path: "../assets/images/buy-comics-digital-comics.png",
+            path: "images/buy-comics-digital-comics.png",
             url: "#"
           },
           {
             text: "DC MERCHANDISE",
-            path: "../assets/images/buy-comics-merchandise.png",
+            path: "images/buy-comics-merchandise.png",
             url: "#" 
           },
           {
             text: "SUBSCRIPTION",
-            path: "../assets/images/buy-comics-subscriptions.png",
+            path: "images/buy-comics-subscriptions.png",
             url: "#" 
           },
           {
             text: "COMIC SHOP LOCATOR",
-            path: "../assets/images/buy-comics-shop-locator.png",
+            path: "images/buy-comics-shop-locator.png",
             url: "#" 
           },
           {
             text: "DC POWER VISA",
-            path: "../assets/images/buy-dc-power-visa.svg",
+            path: "images/buy-dc-power-visa.svg",
             url: "#" 
           },
         ]
