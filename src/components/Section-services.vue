@@ -2,34 +2,10 @@
   <section>
     <div class="container">
       <ul>
-        <li>
-          <a href="">
-            <img src="../assets/images/buy-comics-digital-comics.png" alt="">
-            DIGITAL COMICS
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="../assets/images/buy-comics-merchandise.png" alt="">
-            DC MERCHANDISE
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="../assets/images/buy-comics-subscriptions.png" alt="">
-            SUBSCRIPTION
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="../assets/images/buy-comics-shop-locator.png" alt="">
-            COMIC SHOP LOCATOR
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="../assets/images/buy-dc-power-visa.svg" alt="">
-            DC POWER VISA
+        <li v-for="(service, index) in services" :key="index">
+          <a href="#">
+            <img :src="service.path" alt="">
+            {{service.text}}
           </a>
         </li>
       </ul>
@@ -39,7 +15,38 @@
 
 <script>
 export default {
-    name: "Section_services"
+    name: "Section_services",
+    data() {
+      return {
+        services:[
+          {
+            text: "DIGITAL COMICS",
+            path: "../assets/images/buy-comics-digital-comics.png",
+            url: "#"
+          },
+          {
+            text: "DC MERCHANDISE",
+            path: "../assets/images/buy-comics-merchandise.png",
+            url: "#" 
+          },
+          {
+            text: "SUBSCRIPTION",
+            path: "../assets/images/buy-comics-subscriptions.png",
+            url: "#" 
+          },
+          {
+            text: "COMIC SHOP LOCATOR",
+            path: "../assets/images/buy-comics-shop-locator.png",
+            url: "#" 
+          },
+          {
+            text: "DC POWER VISA",
+            path: "../assets/images/buy-dc-power-visa.svg",
+            url: "#" 
+          },
+        ]
+      }
+    },
 }
 </script>
 

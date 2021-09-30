@@ -106,7 +106,7 @@ header {
     text-decoration: none;
     font-weight: 600;
     padding: 2.8125rem 0;
-    &.active {
+    &:active {
       border-bottom: 5px solid $blue;
     }
   }

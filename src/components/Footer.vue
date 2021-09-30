@@ -2,12 +2,11 @@
   <footer>
     <div id="footer-top">
       <div class="container">
-        <h1>Footer</h1>
       </div>
     </div>
     <div id="footer-bottom">
       <div class="container">
-        
+
       </div>
     </div>
   </footer>
