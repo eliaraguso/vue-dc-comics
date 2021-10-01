@@ -160,6 +160,8 @@ footer {
 #footer-top {
   height: 23.125rem;
   background-image: url(../assets/images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   .container {
     display: flex;
     justify-content: space-between;
