@@ -1,74 +1,20 @@
 <template>
   <section>
     <div class="container">
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-
-      <div class="serie">
-        <div class="serie-img"></div>
-        <div class="serie-title">ACTION COMICS</div>
-      </div>
-      
+      <Serie v-for="(magazine,index) in series" :key="index" :serie="magazine"/>
     </div>
     <button>LOAD MORE</button>
   </section>
 </template>
 
 <script>
+import Serie from './single-magazine.vue';
+
 export default {
   name: "Section_content",
+  components: {
+    Serie
+  },
   data() {
     return {
       series: [
@@ -180,31 +126,14 @@ section {
     justify-content: space-between;
     padding-bottom: 1.25rem;
   }
-  .serie {
-    width: calc((100% / 6) - 1rem);
-    height: fit-content;
-    text-align: initial;
-  }
-  .serie-img {
-    height: 11.75rem;
-    background-image: url("https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;
-  }
-  .serie-title {
-    padding-top: 1.25rem;
-  }
-
+  
   button {
-    padding: .5rem 3.125rem;
+    padding: 0.5rem 3.125rem;
     background-color: $blue;
     border: $blue;
-    border-radius: .1875rem;
+    border-radius: 0.1875rem;
     color: white;
     font-weight: bold;
   }
-  
-
 }
 </style>
