@@ -105,7 +105,7 @@
     <div id="footer-bottom">
       <div class="container">
         <div id="footer-bottom-left">
-          <button>SIGN-UP NOW!</button>
+          <a id="sign-up" href="#">SIGN-UP NOW!</a>
         </div>
         <div id="footer-bottom-right">
           <ul>
@@ -206,13 +206,14 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  button {
+  #sign-up {
     background-color: transparent;
     border: .0625rem solid $blue;
     color: white;
     font-weight: 500;
     font-size: 1.125rem;
     padding: .625rem .9375rem;
+    text-decoration: none;
   }
   ul {
     list-style: none;
