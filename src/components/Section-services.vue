@@ -51,7 +51,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/variables";
+@import "../assets/style/variables";
 section {
   background-color: $blue;
   height: 9.6875rem;

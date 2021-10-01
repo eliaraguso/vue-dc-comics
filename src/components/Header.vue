@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="container">
-      <img src="@/assets/images/dc-logo.png" alt="" />
+      <img src="../assets/images/dc-logo.png" alt="" />
       <nav>
         <ul>
             <li v-for="(link, index) in menu" :key="index">
@@ -76,7 +76,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/variables";
+@import "../assets/style/variables";
 header {
   height: 7.5rem;
   .container {

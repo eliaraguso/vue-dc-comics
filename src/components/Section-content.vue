@@ -163,7 +163,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/variables.scss";
+@import "../assets/style/variables.scss";
 
 section {
   background-color: $darkGrey;
